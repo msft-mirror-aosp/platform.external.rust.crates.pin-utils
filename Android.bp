@@ -6,3 +6,27 @@ rust_library_host_rlib {
     srcs: ["src/lib.rs"],
     edition: "2018",
 }
+
+rust_test_host {
+    name: "pin-utils_tests",
+    crate_name: "pin_utils",
+    srcs: [
+        "tests/projection.rs",
+        "tests/stack_pin.rs",
+    ],
+    test_suites: ["general-tests"],
+    auto_gen_config: true,
+    edition: "2018",
+    rlibs: [
+        "libpin_utils",
+    ],
+}
+
+rust_test_host {
+    name: "pin-utils_tests_pin_utils",
+    crate_name: "pin_utils",
+    srcs: ["src/lib.rs"],
+    test_suites: ["general-tests"],
+    auto_gen_config: true,
+    edition: "2018",
+}
