@@ -1,12 +1,21 @@
 {
   "presubmit": [
     {
+      "name": "pin-utils_tests_projection"
+    },
+    {
       "name": "pin-utils_tests_projection",
       "host": true
     },
     {
+      "name": "pin-utils_tests_stack_pin"
+    },
+    {
       "name": "pin-utils_tests_stack_pin",
       "host": true
+    },
+    {
+      "name": "pin-utils_tests_pin_utils"
     },
     {
       "name": "pin-utils_tests_pin_utils",
