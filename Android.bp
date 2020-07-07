@@ -2,7 +2,7 @@
 // Manually split host and device tests,
 // and link in static libraries for device tests.
 
-rust_library_rlib {
+rust_library {
     name: "libpin_utils",
     host_supported: true,
     crate_name: "pin_utils",
@@ -16,7 +16,7 @@ rust_defaults {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     edition: "2018",
-    rlibs: [
+    rustlibs: [
         "libpin_utils",
     ],
 }
