@@ -6,6 +6,9 @@
 #![allow(unknown_lints)]
 #![doc(html_root_url = "https://docs.rs/pin-utils/0.1.0")]
 
+// ANDROID: Use std to allow building as a dylib.
+extern crate std;
+
 #[doc(hidden)]
 pub mod core_reexport {
     pub use core::*;
