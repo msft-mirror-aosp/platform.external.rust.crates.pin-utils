@@ -2,25 +2,32 @@
 {
   "presubmit": [
     {
-      "name": "pin-utils_host_test_src_lib",
-      "host": true
+      "host": true,
+      "name": "pin-utils_host_test_src_lib"
     },
     {
       "name": "pin-utils_device_test_src_lib"
     },
     {
-      "name": "pin-utils_host_test_tests_projection",
-      "host": true
+      "host": true,
+      "name": "pin-utils_host_test_tests_projection"
     },
     {
       "name": "pin-utils_device_test_tests_projection"
     },
     {
-      "name": "pin-utils_host_test_tests_stack_pin",
-      "host": true
+      "host": true,
+      "name": "pin-utils_host_test_tests_stack_pin"
     },
     {
       "name": "pin-utils_device_test_tests_stack_pin"
+    },
+    {
+      "host": true,
+      "name": "futures-util_host_test_src_lib"
+    },
+    {
+      "name": "futures-util_device_test_src_lib"
     }
   ]
 }
