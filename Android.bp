@@ -45,7 +45,7 @@ rust_library {
     crate_name: "pin_utils",
     cargo_env_compat: true,
     cargo_pkg_version: "0.1.0",
-    srcs: ["src/lib.rs"],
+    crate_root: "src/lib.rs",
     edition: "2018",
     apex_available: [
         "//apex_available:platform",
@@ -62,7 +62,7 @@ rust_test {
     crate_name: "projection",
     cargo_env_compat: true,
     cargo_pkg_version: "0.1.0",
-    srcs: ["tests/projection.rs"],
+    crate_root: "tests/projection.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
@@ -78,7 +78,7 @@ rust_test {
     crate_name: "stack_pin",
     cargo_env_compat: true,
     cargo_pkg_version: "0.1.0",
-    srcs: ["tests/stack_pin.rs"],
+    crate_root: "tests/stack_pin.rs",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
